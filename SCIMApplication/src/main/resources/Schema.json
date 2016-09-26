@@ -1,0 +1,138 @@
+{
+	"schemas": [
+		"urn:scim:schemas:core:1.0"
+	],
+	"startIndex": 1,
+	"totalResults": 2,
+	"itemsPerPage": 2,
+	"Resources": [
+		{
+			"id": "urn:scim:schemas:core:1.0:User",
+			"name": "User",
+			"description": "Core User",
+			"schema": "urn:scim:schemas:core:1.0",
+			"endpoint": "/Users",
+			"attributes": [
+				{
+					"name": "id",
+					"type": "string",
+					"multiValued": false,
+					"description": "ID do usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},			
+				{
+					"name": "userName",
+					"type": "string",
+					"multiValued": false,
+					"description": "Codigo do usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},
+				{
+					"name": "name",
+					"type": "string",
+					"multiValued": false,
+					"description": "Nome do usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},
+				{
+					"name": "email",
+					"type": "string",
+					"multiValued": false,
+					"description": "E-mail do usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},
+				{
+					"name": "phoneNumber",
+					"type": "string",
+					"multiValued": false,
+					"description": "Telefone do usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},	
+				{
+					"name": "type",
+					"type": "string",
+					"multiValued": false,
+					"description": "Tipo de usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},
+				{
+					"name": "active",
+					"type": "boolean",
+					"multiValued": false,
+					"description": "Status do usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},
+				{
+					"name": "password",
+					"type": "string",
+					"multiValued": false,
+					"description": "Senha do usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},
+				{
+					"name": "groups",
+					"type": "string",
+					"multiValued": true,
+					"description": "Grupos do usuario",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				}
+			]
+		},
+		{
+			"id": "urn:scim:schemas:core:1.0:Group",
+			"name": "Group",
+			"description": "Core Group",
+			"schema": "urn:scim:schemas:core:1.0",
+			"endpoint": "/Groups",
+			"attributes": [
+				{
+					"name": "displayName",
+					"type": "string",
+					"multiValued": false,
+					"description": "Nome do Grupo",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				},
+				{
+					"name": "id",
+					"type": "string",
+					"multiValued": false,
+					"description": "ID do Grupo",
+					"schema": "urn:scim:schemas:core:1.0",
+					"readOnly": true,
+					"required": true,
+					"caseExact": false
+				}
+			]
+		}
+	]
+}

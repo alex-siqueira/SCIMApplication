@@ -1,0 +1,45 @@
+{
+  "schemas": ["urn:scim:schemas:core:1.0"],
+  "id":"1",
+  "externalId":"config",
+  "meta":{
+    "created":"2016-08-09T00:00:00.000Z",
+    "lastModified":"2016-08-09T00:00:00.000Z",
+    "location":"http://apigateway1.local:8080/scim/v1/ServiceProviderConfigs/1",
+    "version":"1.0"
+  },
+  "documentationUrl":"http://apigateway1.local:8080/scim/docs.html",
+  "patch": {
+    "supported":false
+  },
+  "bulk": {
+    "supported":false,
+    "maxOperations":1000,
+    "maxPayloadSize":1048576
+  },
+  "filter": {
+    "supported":true,
+    "maxResults": 200
+  },
+  "changePassword" : {
+    "supported":false
+  },
+  "sort": {
+    "supported":false
+  },
+  "etag": {
+    "supported":false
+  },
+  "xmlDataFormat": {
+    "supported":false
+  },
+  "authenticationSchemes": [
+    {
+      "name": "HTTP Basic",
+      "description": "Authentication Scheme using the Http Basic Standard",
+      "specUrl":"http://www.ietf.org/rfc/rfc2617.txt",
+      "documentationUrl":"http://example.com/help/httpBasic.html",
+      "type":"httpbasic"
+     }
+  ]
+}

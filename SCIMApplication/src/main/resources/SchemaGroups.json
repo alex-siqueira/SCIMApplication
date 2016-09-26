@@ -1,0 +1,29 @@
+{
+	"id": "urn:scim:schemas:core:1.0:Group",
+	"name": "Group",
+	"description": "Core Group",
+	"schema": "urn:scim:schemas:core:1.0",
+	"endpoint": "/Groups",
+	"attributes": [
+		{
+			"name": "displayName",
+			"type": "string",
+			"multiValued": false,
+			"description": "Nome do Grupo",
+			"schema": "urn:scim:schemas:core:1.0",
+			"readOnly": true,
+			"required": true,
+			"caseExact": false
+		},
+		{
+			"name": "id",
+			"type": "string",
+			"multiValued": false,
+			"description": "ID do Grupo",
+			"schema": "urn:scim:schemas:core:1.0",
+			"readOnly": true,
+			"required": true,
+			"caseExact": false
+		}
+	]
+}
